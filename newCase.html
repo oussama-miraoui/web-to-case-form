@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Création du compte financement</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+    <!--  If necessary, please modify the charset parameter to specify the        -->
+    <!--  character set of your HTML page.                                        -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 image-container"></div>
+        <div class="col-md-6 form-container">
+          <div class="alert alert-danger text-center" id="alert" hidden>
+            Fill all fields!
+          </div>
+          <h5 class="text-center mb-3 title">
+            Créer votre compte de financement
+          </h5>
+        
+
+          <!--  ----------------------------------------------------------------------  -->
+          <!--  NOTE: Please add the following <FORM> element to your page.             -->
+          <!--  ----------------------------------------------------------------------  -->
+
+          <form
+            action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8"
+            method="POST"
+          >
+            <input type="hidden" name="orgid" value="00D8d00000AVbyI" />
+            <input
+              type="hidden"
+              name="retURL"
+              value="https://oussama-miraoui.github.io/financingRequestLandingPage/"
+              />
+              <!-- value="https://playful-shark-65kgl2-dev-ed.trailblaze.my.site.com/" -->
+
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!-- <input type="hidden" name="debug" value="1" />
+            <input
+              type="hidden"
+              name="debugEmail"
+              value="oussamamiraoui@gmail.com"
+            /> -->
+            <!--  ----------------------------------------------------------------------  -->
+
+            Nom:<input
+              id="00N8d00000Ti2Ae"
+              maxlength="50"
+              name="00N8d00000Ti2Ae"
+              size="20"
+              type="text"
+              placeholder="John"
+            />
+            <span class="fieldRequired"></span>
+            <br />
+
+            Prénom:<input
+              id="00N8d00000Ti2Ao"
+              maxlength="50"
+              name="00N8d00000Ti2Ao"
+              size="20"
+              type="text"
+              placeholder="Doe"
+            />
+            <span class="fieldRequired"></span>
+
+            <br />
+
+            Téléphone:<input
+              id="00N8d00000Ti2D4"
+              maxlength="40"
+              name="00N8d00000Ti2D4"
+              size="20"
+              type="text"
+              placeholder="+33XXXXXXXXXX"
+              
+            />
+            <span class="fieldRequired"></span>
+            <span id="phoneMessage" class="notValidInput" style="display: none;">Enter un téléphone valide.</span>
+
+            <br />
+
+            <label for="email">Email</label
+            ><input
+              id="email"
+              maxlength="80"
+              name="email"
+              size="20"
+              type="text"
+              placeholder="johndoe@example.com"
+            />
+            <span class="fieldRequired"></span>
+            <span id="emailMessage" class="notValidInput" style="display: none;">Entrer un email valide contenant un @.</span>
+
+            <br />
+
+            <input
+              type="hidden"
+              id="external"
+              name="external"
+              value="1"
+              
+            /><br />
+
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              class="btn btn-block"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="validation.js"></script>
+    <script></script>
+  </body>
+</html>
